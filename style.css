@@ -1,0 +1,285 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    width: fit-content;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #23272c;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #c7791b;
+}
+
+/* nav start */
+nav.navbar{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background-color: #c7791b;
+    z-index: 9999;
+}
+
+nav.navbar img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+nav.navbar .nav-child-right a{
+    text-decoration: none; 
+    font-size: 18px;
+    color: black;
+    font-family: sans-serif;
+    margin: 0px 8px;
+}
+/* nav end */
+
+/* main start */
+main{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url('assets/background-1.jpg');
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main h1{
+    font-size: 40px;
+    text-align: center;
+    color: white;
+}
+/* main end */
+
+/* menu start */
+section.menu{
+    background-image: url('assets/background-2.jpg');
+    background-size: 100% 100%;
+    min-height: 100vh;   
+}
+
+.title{
+    text-align: center;
+    padding: 20px 0px;
+    color: #c7791b;
+    font-size: 50px;
+    text-transform: capitalize;
+}
+
+.parent-menu{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    padding: 20px 50px;
+}
+
+.menu-food-item {
+    width: 300px;
+    height: 300px;
+    margin: 30px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.menu-food-item img{
+    width: 100%;
+    height: 100%;
+}
+
+.menu-food-item .icons{
+    width: 100%;
+    height: 50px;
+    background-color: #c7791b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+    position: absolute;
+    bottom: -120px;
+    transition: .3s linear;
+}
+
+.menu-food-item .icons i{
+    font-size: 24px;
+    color: white;
+}
+
+.menu-food-item:hover div{
+    bottom: 0px;
+}
+
+/* menu end */
+
+
+/* about start */
+
+section.about{
+    background-image: url('assets/background-3.jpg');
+    min-height: 100vh;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+}
+
+section.about div{
+    max-width: 600px;
+    margin: 50px 60px 0px;
+    padding-left: 30px;
+}
+
+section.about div p{
+    color: white;
+    margin: 20px 0px;
+    line-height: 1.7;
+}
+
+section.about div .title{
+    text-align: left;
+    border-bottom: 5px solid #c7791b;
+    width: fit-content;
+    padding-bottom: 0px;
+}
+/* about end */
+
+/* services start */
+.services{
+    min-height: 500px;
+    background-image: url('assets/background-4.jpg');
+    background-size: 100% 100%;
+}
+
+.parent-services{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.parent-services div{
+    width: 300px;
+    margin: 20px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services img{
+    height: 100px;
+    width: 100px;
+}
+
+.parent-services div .title{
+    font-size: 30px
+}
+
+.services h1{
+    margin: 20px;
+}
+/* services end */
+
+/* contact start */
+.contact{
+    min-height: 400px;
+    padding: 45px 30px;
+    background-image: url('assets/background-5.jpg');
+    background-size: 100% 100%;
+}
+
+.contact form{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding: 0px 30px;
+}
+
+.contact form div{
+    width: 49%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact form div input{
+    width: 100%;
+    height: 60px;
+    padding: 20px 0px 20px 20px;
+    margin: 8px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 8px 0px black;
+}
+
+.contact form div input.message{
+    height: 140px;
+}
+
+.contact form div input.submit{
+    background-color: #23272c;
+    box-shadow: none;
+    font-size: 25px;
+    padding: 0px;
+    color: #c7791b;
+    transition: .3s linear;
+}
+
+.contact form div input.submit:hover{
+    background-color:#c7791b;
+    color: #23272c;
+}
+/* contact end */
+
+/* footer start */
+footer{
+    min-height: 60px;
+    background-color: #23272c;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+footer p{
+    color: white;
+    text-transform: capitalize;
+    margin: 20px;
+    font-size: 20px;
+}
+
+footer p a{
+    color: #c7791b;
+}
+
+footer #whatsapp{
+    color: white;
+    font-size: 20px;
+}
+
+footer #whatsapp i{
+    color: green;
+    font-size: 25px;
+}
+/* footer end */
+
+
+    
